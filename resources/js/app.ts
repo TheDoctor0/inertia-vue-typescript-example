@@ -16,7 +16,7 @@ new Vue({
 
           console.log(component);
 
-          return component.default;
+          return component.default.options || component.default;
         }),
       },
     });
